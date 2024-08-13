@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WiseTech College Captive Portal</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: url("tech.png") 100%;
+            background-size: cover;
+            color: #fff;
+        }
+        .container {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            text-align: center;
+            width: 100%;
+            max-width: 400px;
+        }
+        .container img {
+            max-width: 100px;
+            margin-bottom: 20px;
+        }
+        .container h1 {
+            margin-bottom: 20px;
+            font-size: 2.5em;
+            color: #0f07ff;
+        }
+        .container p {
+            margin-bottom: 50px;
+            font-size: 1.2em;
+        }
+        .form-group {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #0762ff;
+            color: #000;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .btn:hover {
+            background: #00e0d8;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!--<img src="WiseTechCollege.png" alt="WiseTech College Logo">-->
+        <h1>WiseTech College</h1>
+        <p>Welcome to the WiseTech College network. Please Enter your <strong>credantials</strong> to continue.</p>
+        <form action="/login" method="post">
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit" class="btn">Login</button>
+            <footer><strong>NB</strong> Do <u>Not</u> share your account. Thank You!</footer>
+        </form>
+    </div>
+</body>
+</html>
